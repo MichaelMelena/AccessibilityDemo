@@ -1,0 +1,18 @@
+﻿@page "/ItemList"
+<PageTitle>Item list</PageTitle>
+<h1>ItemList</h1>
+
+<ul>
+    @foreach (var item in items)
+    {
+        <li alt="decorative image @item">@item </li>
+    }
+</ul>
+
+@code {
+    private string[] items = new[]
+                    {
+        "first item",
+        "second item"
+    };
+}
